@@ -1,0 +1,73 @@
+@import "../utils/variables";
+@import "../utils/header-title";
+
+.banner_about {
+  background-color: $bg-light;
+  h2 {
+    @include header-title;
+  }
+}
+
+.team_member {
+  h2 {
+    @include header-title;
+  }
+}
+.our_partner {
+  background-color: $bg-footer;
+  h2 {
+    font-size: 40px;
+  }
+  .partner-wap {
+    cursor: pointer;
+    background-color: #7276ec;
+    transition: 0.3s;
+    &:hover {
+      background-color: #b1b3f5;
+    }
+  }
+}
+.creative_progress {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.why-us {
+  background: linear-gradient(
+    0deg,
+    rgba(239, 239, 253, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.start_aim {
+  .objective {
+    h2 {
+      font-weight: 300;
+      font-size: 28px;
+    }
+    p {
+      font-weight: 300;
+    }
+    .objective-icon {
+      border-radius: 13px;
+      width: 8rem;
+      background-color: $bg-footer;
+    }
+  }
+}
+.contact_about {
+  button {
+    background-color: $bg-footer;
+    border-color: $bg-footer;
+  }
+  .btn:first-child:hover,
+  :not(.btn-check) + .btn:hover {
+    background-color: #8185ee;
+    border-color: #7275ec;
+  }
+  p {
+    font-weight: 300;
+  }
+}

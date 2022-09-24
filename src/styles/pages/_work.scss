@@ -1,0 +1,64 @@
+@import "../utils/variables.scss";
+@import "../utils/header-title";
+.banner_work {
+  background-image: url("../../assets/images/work/banner-bg-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  h2 {
+    @include header-title;
+    color: $white;
+    &::after {
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.start_our_work {
+  ul {
+    display: flex;
+    li * {
+      color: $governorBay !important;
+    }
+  }
+  .btn-secondary {
+    color: $text-color;
+    background-color: $bg-footer;
+    border-color: $bg-footer;
+    &:hover {
+      color: $text-color;
+      background-color: #7a7ded;
+      border-color: #7275ec;
+    }
+  }
+
+  .btn-light {
+    color: $text-color;
+    background-color: $bg-light;
+    border-color: $bg-light;
+    &:hover {
+      color: $text-color;
+      background-color: #f7fafe;
+      border-color: #f7fafe;
+    }
+  }
+  .item_start_our_work * {
+    font-weight: 300;
+    span {
+      color: $governorBay;
+    }
+  }
+}
+
+.feature_work {
+  background-color: $bg-light;
+  * {
+    font-weight: 300;
+  }
+  .feature-work-heading {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}

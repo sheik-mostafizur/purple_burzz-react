@@ -1,0 +1,8 @@
+@import "../utils/variables.scss";
+footer {
+  background-color: $bg-footer;
+  color: $white;
+  .footer_end {
+    background-color: $governorBay;
+  }
+}

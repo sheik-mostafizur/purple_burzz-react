@@ -1,0 +1,16 @@
+@import "../utils/variables.scss";
+
+@mixin header-title {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: $governorBay;
+  &::after {
+    content: "";
+    width: 150px;
+    display: block;
+    position: absolute;
+    border-bottom: 5px solid #6266ea;
+    padding-top: 0.5em;
+  }
+}

@@ -1,0 +1,6 @@
+// reset
+@import "./base/reset.scss";
+// layout
+@import "./layout/footer", "./layout/navbar";
+// pages
+@import "./pages/home", "./pages/about", "./pages/work", "./pages/contact";

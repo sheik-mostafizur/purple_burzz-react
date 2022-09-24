@@ -1,0 +1,31 @@
+@import "../utils/variables.scss";
+nav {
+  padding: 0.8rem 0 !important;
+  .navbar-brand {
+    font-weight: 500;
+    font-size: 1.5rem;
+    span {
+      color: $governorBay;
+    }
+  }
+  .nav-item {
+    margin: 0 1rem;
+    .nav-link {
+      border-radius: 50rem;
+      padding: 0.5rem 1rem !important;
+      &.active,
+      &:hover {
+        background-color: $governorBay;
+        color: $white;
+        padding: 0.5rem 1rem !important;
+      }
+    }
+  }
+  .right-icon {
+    a i {
+      color: $governorBay;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+}

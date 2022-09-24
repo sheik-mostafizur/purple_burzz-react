@@ -1,0 +1,14 @@
+.mybtn {
+  color: #f6f9fe;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #382ba5 !important;
+  border-color: #35289b !important;
+  color: #f6f9fe !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

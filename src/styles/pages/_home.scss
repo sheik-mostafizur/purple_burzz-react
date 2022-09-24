@@ -1,0 +1,125 @@
+@import "../utils/variables.scss";
+header {
+  .banner {
+    background-image: url("../../assets/images/home/banner-bg-01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 0.5rem;
+    .carousel-item {
+      .row {
+        min-height: 70vh;
+        align-items: center;
+        h1 {
+          color: $governorBay;
+        }
+      }
+    }
+    .prevBtn,
+    .nextBtn {
+      i {
+        color: $governorBay;
+        font-size: 3rem;
+      }
+    }
+    .carousel-indicators [data-bs-target] {
+      background-color: $governorBay;
+    }
+  }
+  .services {
+    .typo-space-line {
+      position: relative;
+      &::after {
+        content: "";
+        width: 150px;
+        display: block;
+        position: absolute;
+        border-bottom: 5px solid $bg-footer;
+        padding-top: 0.5em;
+      }
+    }
+    .footer {
+      max-width: 720px;
+    }
+    .service-tag-nav {
+      background-color: $bg-footer;
+      nav {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .service-work-vertical {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 33.33%,
+        rgba(255, 255, 255, 1) 66.66%,
+        rgba(255, 255, 255, 0) 99.99%
+      );
+      background-size: 300% 300%;
+      background-position: 0% 100%;
+      transition: 0.5s;
+      &:hover {
+        background-position: 0% 0%;
+        transition: 0.5s;
+        .service-work-content,
+        .card-text {
+          color: #212529;
+        }
+        .btn-outline-light {
+          border-color: #212529;
+          color: #212529;
+        }
+      }
+    }
+  }
+
+  .recent-work {
+    .header {
+      background-color: $bg-footer;
+    }
+    .recent-item {
+      .recent-item-vertical {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0) 33.333%,
+          rgba(97, 84, 199, 1) 66.666%,
+          rgba(255, 255, 255, 0) 99.999%
+        );
+        background-size: 300% 300%;
+        background-position: 0% 100%;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+          background-position: 0% 0%;
+          transition: 0.5s;
+          div.recent-item-content {
+            top: 50%;
+            margin-top: -2.5em;
+            position: absolute;
+          }
+        }
+        &:hover * {
+          color: $white;
+          transition: 0.5s;
+        }
+      }
+      .card-img-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        border-radius: calc(0.25rem - 1px);
+      }
+    }
+  }
+}

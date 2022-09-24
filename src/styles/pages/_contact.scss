@@ -1,0 +1,37 @@
+@import "../utils/variables.scss";
+.banner_contact {
+  background-color: $bg-light;
+  h1 {
+    position: relative;
+    font-size: 40px;
+    color: $governorBay;
+  }
+}
+.form_contact {
+  * {
+    font-weight: 300;
+  }
+  h1 {
+    color: $governorBay;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  i.fa-solid {
+    color: $governorBay;
+  }
+  form {
+    .mybtn {
+      color: #f6f9fe;
+      background-color: $bg-footer;
+      border-color: $bg-footer;
+    }
+    .btn-check:focus + .btn-primary,
+    .btn-primary:focus,
+    .btn-primary:hover {
+      background-color: #382ba5 !important;
+      border-color: #35289b !important;
+      color: #f6f9fe !important;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+}
